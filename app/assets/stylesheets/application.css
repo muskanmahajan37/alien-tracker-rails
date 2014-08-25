@@ -100,7 +100,7 @@ input[type=search] {
     color: #808080;
 }
 
-button {
+.btn {
   border: 0;
   color: #fff;
   background: #000;
@@ -109,7 +109,7 @@ button {
   font-size: 110%;
   padding: 1em;
 }
-button:hover, button:focus {
+.btn:hover, .btn:focus {
   color: #fff;
   background: #0074D9;
 }
