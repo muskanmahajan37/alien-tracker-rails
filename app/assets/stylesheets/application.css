@@ -119,8 +119,23 @@ input[type=search] {
 }
 
 .container {
-  max-width: 50em;
+  padding: 1em;
+  max-width: 60em;
   margin: 0 auto;
+}
+
+.col-group > div {
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 44em) {
+  .col-group {
+    overflow: hidden;
+  }
+  .col-group > div {
+    float: left;
+    width: 50%;
+  }
 }
 
 @media all and (min-width: 40em) {

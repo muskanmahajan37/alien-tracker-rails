@@ -6,28 +6,35 @@
 </em>
 </p>
 
-<h2>Sightings</h2>
-<br>
-<ul>
-  <% @alien.sightings.each do |sighting| %>
-    <li>
-      <p>
-      <a href="/sightings/<%= sighting.id %>">
-        <%= sighting.created_at.strftime("Sighted on %m/%d/%Y at %I:%M%p") %>
-        [ <%= sighting.latitude %>° , <%= sighting.longitude %>° ]
-      </a>
-      </p>
-    </li>
-  <% end %>
-</ul>
-<br>
-<p>
-  <a href="/aliens/<%= @alien.id %>/edit">Edit Alien</a>
-  <br>
-  <a href="/aliens/<%= @alien.id %>"
-   data-confirm="You sure?"
-   data-method="delete"
-   rel="nofollow">Delete Alien</a>
-  <br>
-  <a href="/aliens">Return to Alien listing</a>
-</p>
+<div class="col-group">
+  <div>
+    <h2>Sightings</h2>
+    <br>
+    <ul>
+      <% @alien.sightings.each do |sighting| %>
+        <li>
+          <p>
+          <a href="/sightings/<%= sighting.id %>">
+            <%= sighting.created_at.strftime("Sighted on %m/%d/%Y at %I:%M%p") %>
+            [ <%= sighting.latitude %>° , <%= sighting.longitude %>° ]
+          </a>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div>
+    <h2></h2>
+    <br>
+    <p>
+      <a href="/aliens/<%= @alien.id %>/edit">Edit Alien</a>
+      <br>
+      <a href="/aliens/<%= @alien.id %>"
+       data-confirm="You sure?"
+       data-method="delete"
+       rel="nofollow">Delete Alien</a>
+      <br>
+      <a href="/aliens">Return to Alien listing</a>
+    </p>
+  </div>
+</div>
