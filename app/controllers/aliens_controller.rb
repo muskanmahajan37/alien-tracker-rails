@@ -31,9 +31,9 @@ class AliensController < ApplicationController
   def update
     @alien = Alien.new(params[:alien])
     if @alien.update(params[:alien])
-      render('contacts/success.html.erb')
+      render('aliens/success.html.erb')
     else
-      render('contacts/edit.html.erb')
+      render('aliens/edit.html.erb')
     end
   end
 end
