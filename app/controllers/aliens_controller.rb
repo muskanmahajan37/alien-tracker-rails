@@ -8,4 +8,13 @@ class AliensController < ApplicationController
     @alien = Alien.new
     render('aliens/new.html.erb')
   end
+
+  def create
+    @alien = Alien.new(params[:alien])
+    if @alien.save
+      render('aliens/success.html.erb')
+    else
+      render('aliens/new.html.erb')
+    end
+  end
 end
