@@ -1,6 +1,6 @@
 class AliensController < ApplicationController
   def index
     @aliens = Alien.all
-    render('contacts/index.html.erb')
+    render('aliens/index.html.erb')
   end
 end
