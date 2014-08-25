@@ -3,8 +3,11 @@
 <ul>
   <% @aliens.each do |alien| %>
     <li>
-      <p><%= alien.name %></p>
-      <p><%= alien.description %></p>
+      <p>
+        [<%= alien.name %>]
+        <br>
+        <em><%= alien.description %></em>
+      </p>
     </li>
   <% end %>
 </ul>
