@@ -1,0 +1,13 @@
+<h1>Sightings</h1>
+
+<ul>
+  <% @sightings.each do |sighting| %>
+    <li>
+      <p>
+        <strong><a href="/sightings/<%= sighting.id %>"><%= sighting.alien_id %></a></strong>
+        <br>
+        <em><%= sighting.latitude %> | <%= sighting.longitude %></em>
+      </p>
+    </li>
+  <% end %>
+</ul>
