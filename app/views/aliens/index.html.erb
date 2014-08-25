@@ -1,0 +1,7 @@
+<h1>Alien Tracker</h1>
+
+<ul>
+  <% @aliens.each do |alien| %>
+    <li><%= alien.name %> - <%= alien.type %></li>
+  <% end %>
+</ul>
