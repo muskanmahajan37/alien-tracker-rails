@@ -27,4 +27,13 @@ class AliensController < ApplicationController
     @alien = Alien.find(params[:id])
     render('aliens/edit.html.erb')
   end
+
+  def update
+    @alien = Alien.new(params[:alien])
+    if @alien.update(params[:alien])
+      render('contacts/success.html.erb')
+    else
+      render('contacts/edit.html.erb')
+    end
+  end
 end
