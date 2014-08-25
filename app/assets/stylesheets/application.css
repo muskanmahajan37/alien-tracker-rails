@@ -114,6 +114,9 @@ button:hover, button:focus {
   background: #3D9970;
 }
 /************End Global**************/
+.warning {
+  color: #FF4136;
+}
 
 .container {
   max-width: 50em;

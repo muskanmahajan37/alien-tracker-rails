@@ -1,14 +1,14 @@
 <h1>Add Alien Species</h1>
 
 <% if @alien.errors.any? %>
-  <h3>Please fix these errors:</h3>
+  <p>Please fix these errors:</p>
   <ul>
     <% @alien.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+      <li><p class="warning"><em><%= message %></em></p></li>
     <% end %>
   </ul>
 <% end %>
-
+<br>
 <form action="/aliens/<%= @alien.id %>" method="post">
   <label for="alien_name">Name</label>
   <br>
