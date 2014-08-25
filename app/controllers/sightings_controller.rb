@@ -5,6 +5,7 @@ class SightingsController < ApplicationController
   end
 
   def new
+    @aliens = Alien.all
     @sighting = Sighting.new
     render('sightings/new.html.erb')
   end
