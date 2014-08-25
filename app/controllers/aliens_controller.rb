@@ -25,6 +25,6 @@ class AliensController < ApplicationController
 
   def edit
     @alien = Alien.find(params[:id])
-    render('contacts/edit.html.erb')
+    render('aliens/edit.html.erb')
   end
 end
