@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140825164458) do
+ActiveRecord::Schema.define(version: 20140825171008) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "aliens", force: true do |t|
     t.string  "name"
-    t.string  "type"
+    t.string  "description"
     t.boolean "threat"
     t.integer "region_id"
   end
