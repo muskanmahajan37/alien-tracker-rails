@@ -100,3 +100,22 @@ input[type=search] {
     color: #808080;
 }
 /************End Global**************/
+
+.container {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 40em) {
+  .container {
+     font-size: 120%;
+      line-height: 1.5;
+  }
+}
+
+@media all and (min-width: 55em) {
+  .container {
+     font-size: 130%;
+      line-height: 1.7;
+  }
+}
