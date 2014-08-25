@@ -99,6 +99,20 @@ input[type=search] {
 :-moz-placeholder {
     color: #808080;
 }
+
+button {
+  border: 0;
+  color: #fff;
+  background: #000;
+  display: inline-block;
+  margin: 1.5em 0;
+  font-size: 110%;
+  padding: 1em;
+}
+button:hover, button:focus {
+  color: #fff;
+  background: #3D9970;
+}
 /************End Global**************/
 
 .container {
