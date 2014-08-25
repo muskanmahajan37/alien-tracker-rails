@@ -5,9 +5,10 @@
   <% @sightings.each do |sighting| %>
     <li>
       <p>
-        <strong><a href="/sightings/<%= sighting.id %>"><%= sighting.created_at.strftime("Sighted on %m/%d/%Y at %I:%M%p") %></a></strong>
-        <br>
-        <%= sighting.latitude %>°  | <%= sighting.longitude %>°
+      <a href="/sightings/<%= sighting.id %>">
+        <%= sighting.created_at.strftime("Sighted #{sighting.alien} on %m/%d/%Y at %I:%M%p") %>
+        [ <%= sighting.latitude %>° , <%= sighting.longitude %>° ]
+      </a>
       </p>
     </li>
   <% end %>
