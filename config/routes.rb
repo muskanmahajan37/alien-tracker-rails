@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   match('aliens/:id', {:via => :delete, :to => 'aliens#destroy'})
 
   match('sightings', {:via => :get, :to => 'sightings#index'})
+  match('sightings/new', {:via => :get, :to => 'sightings#new'})
 end
