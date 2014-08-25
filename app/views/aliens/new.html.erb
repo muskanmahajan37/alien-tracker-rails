@@ -1,0 +1,23 @@
+<h1>Add Alien Species</h1>
+
+<% if @alien.errors.any? %>
+  <h3>Please fix these errors:</h3>
+  <ul>
+    <% @alien.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form action="/aliens/<%= @alien.id %>" method="post">
+  <label for="alien_name">Name</label>
+  <br>
+  <input id="alien_name" name="name" type="text" value="<%= @alien.name %>">
+  <br>
+  <br>
+  <label for="alien_description">Description</label>
+  <br>
+  <textarea rows="10" cols="50" id="alien_description" name="description" type="text" value="<%= @alien.description %>"></textarea>
+  <br>
+  <button>Add Alien</button>
+</form>
