@@ -2,6 +2,9 @@
 
 <ul>
   <% @aliens.each do |alien| %>
-    <li><%= alien.name %></li>
+    <li>
+      <p><%= alien.name %></p>
+      <p><%= alien.description %></p>
+    </li>
   <% end %>
 </ul>
