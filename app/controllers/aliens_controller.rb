@@ -17,4 +17,9 @@ class AliensController < ApplicationController
       render('aliens/new.html.erb')
     end
   end
+
+  def show
+    @alien = Alien.find(params[:id])
+    render('aliens/show.html.erb')
+  end
 end
