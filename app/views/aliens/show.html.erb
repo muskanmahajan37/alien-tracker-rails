@@ -6,6 +6,21 @@
 </em>
 </p>
 
+<h2>Sightings</h2>
+<br>
+<ul>
+  <% @alien.sightings.each do |sighting| %>
+    <li>
+      <p>
+      <a href="/sightings/<%= sighting.id %>">
+        <%= sighting.created_at.strftime("Sighted on %m/%d/%Y at %I:%M%p") %>
+        [ <%= sighting.latitude %>° , <%= sighting.longitude %>° ]
+      </a>
+      </p>
+    </li>
+  <% end %>
+</ul>
+<br>
 <p>
   <a href="/aliens/<%= @alien.id %>/edit">Edit Alien</a>
   <br>
