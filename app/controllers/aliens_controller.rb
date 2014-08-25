@@ -36,4 +36,10 @@ class AliensController < ApplicationController
       render('aliens/edit.html.erb')
     end
   end
+
+  def destroy
+    @alien = Alien.find(params[:id])
+    @alien.destroy
+    render('aliens/destroy.html.erb')
+  end
 end
