@@ -6,5 +6,9 @@
   <%= @alien.description %>
 </p>
 
-<p><a href="/aliens/<%= @alien.id %>/edit">Edit this Alien</a></p>
+<p><a href="/aliens/<%= @alien.id %>/edit">Edit Alien</a></p>
+<a href="/contacts/<%= @alien.id %>"
+   data-confirm="You sure?"
+   data-method="delete"
+   rel="nofollow">Delete Alien</a>
 <p><a href="/aliens">Return to Alien listing</a></p>
