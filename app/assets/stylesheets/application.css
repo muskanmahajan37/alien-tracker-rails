@@ -29,17 +29,17 @@ legend {
 /************Global**************/
 body {
   background: #fff;
-  color: #000;
+  color: #111111;
   font: 100%/1.4 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   padding: 0;
   -webkit-text-size-adjust: none;
 }
 a {
-  color: #808080;
+  color: #0074D9;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #e51837;
+  color: #7FDBFF;
 }
 p {
   margin: 0 0 1em;
@@ -111,7 +111,7 @@ button {
 }
 button:hover, button:focus {
   color: #fff;
-  background: #3D9970;
+  background: #0074D9;
 }
 /************End Global**************/
 .warning {
