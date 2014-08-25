@@ -12,12 +12,12 @@
 <form action="/aliens/<%= @alien.id %>" method="post">
   <label for="alien_name">Name</label>
   <br>
-  <input id="alien_name" name="name" type="text" value="<%= @alien.name %>">
+  <input id="alien_name" name="alien[name]" type="text" value="<%= @alien.name %>">
   <br>
   <br>
   <label for="alien_description">Description</label>
   <br>
-  <textarea rows="10" cols="50" id="alien_description" name="description" type="text" value="<%= @alien.description %>"></textarea>
+  <textarea rows="10" cols="50" id="alien_description" name="alien[description]" type="text" value="<%= @alien.description %>"></textarea>
   <br>
   <button>ADD ALIEN</button>
 </form>
